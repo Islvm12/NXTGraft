@@ -482,6 +482,7 @@ export default function App() {
                 >
                   <img
                     // loading="lazy"
+                    fetchpriority="high"
                     src={imgUrl}
                     alt={`Highlight image ${idx + 1}`}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
