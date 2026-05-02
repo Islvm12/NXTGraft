@@ -315,7 +315,7 @@ export default function App() {
 
               <div className="relative p-2 rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl max-w-5xl w-full overflow-hidden group">
                 <img
-                  loading="lazy"
+                  // loading="lazy"
                   src="./assets/image_fea916.jpg"
                   alt="Full Robot Architecture"
                   className="w-full h-[350px] md:h-[550px] object-cover rounded-3xl border border-slate-800/80 transition-transform duration-700 group-hover:scale-[1.01]"
@@ -340,7 +340,7 @@ export default function App() {
               >
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
-                    loading="lazy"
+                    // loading="lazy"
                     src="./assets/Design.jpg"
                     alt="Mechanical Design"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
@@ -375,7 +375,7 @@ export default function App() {
               >
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
-                    loading="lazy"
+                    // loading="lazy"
                     src="./assets/Elec Sys.png"
                     alt="Electrical Systems"
                     className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
@@ -410,7 +410,7 @@ export default function App() {
               >
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
-                    loading="lazy"
+                    // loading="lazy"
                     src="./assets/Pneu Sys.png"
                     alt="Pneumatic Mechanics"
                     className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
@@ -481,7 +481,7 @@ export default function App() {
                   className="relative w-[260px] h-[180px] md:w-[400px] md:h-[280px] rounded-2xl overflow-hidden shadow-lg flex-shrink-0 group border border-slate-200 bg-slate-200"
                 >
                   <img
-                    loading="lazy"
+                    // loading="lazy"
                     src={imgUrl}
                     alt={`Highlight image ${idx + 1}`}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -502,7 +502,7 @@ export default function App() {
                   className="relative w-[260px] h-[180px] md:w-[400px] md:h-[280px] rounded-2xl overflow-hidden shadow-lg flex-shrink-0 group border border-slate-200 bg-slate-200"
                 >
                   <img
-                    loading="lazy"
+                    // loading="lazy"
                     src={imgUrl}
                     alt={`Highlight image secondary ${idx + 1}`}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -539,7 +539,7 @@ export default function App() {
                 <div className="reveal-on-scroll bg-[#0f172a] rounded-[2rem] overflow-hidden flex flex-col md:flex-row shadow-[0_0_40px_rgba(0,118,182,0.15)] border border-white/10 group">
                   <div className="md:w-2/5 h-fit md:h-auto relative overflow-hidden">
                     <img
-                      loading="lazy"
+                      // loading="lazy"
                       src="./assets/Team members/nour.png"
                       alt="Dr. Nouraldin Sharaby"
                       className="w-full h-auto sm:h-full sm:w-auto opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
@@ -609,7 +609,7 @@ export default function App() {
                               className="w-[180px] sm:w-[220px] md:w-[280px] lg:w-[320px] aspect-[3/4] shrink-0 group relative overflow-hidden bg-[#0f172a] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#0076b6]/20 transition-all duration-700 "
                             >
                               <img
-                                loading="lazy"
+                                // loading="lazy"
                                 src={member.image}
                                 alt={member.name}
                                 className="max-w-full max-h-full object-contain group-hover:scale-105 transition-all duration-700 pointer-events-none"
