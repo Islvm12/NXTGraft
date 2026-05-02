@@ -209,7 +209,7 @@ export default function App() {
               >
                 {introStep === 5 && (
                   <video
-                    preload="none"
+                    preload="auto"
                     muted
                     loop
                     autoPlay
@@ -266,7 +266,7 @@ export default function App() {
                     >
                       {introStep === 5 && (
                         <video
-                          preload="none"
+                          preload="auto"
                           muted
                           loop
                           autoPlay
