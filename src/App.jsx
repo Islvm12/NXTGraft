@@ -150,7 +150,7 @@ export default function App() {
 
             {/* Right Actions */}
             <div className="flex items-center gap-4 drop-shadow-md">
-              <span className="font-bold text-xs tracking-widest uppercase font-outfit hidden sm:block">
+              <span className="font-bold text-xs tracking-widest uppercase font-outfit">
                 NXT TEAM
               </span>
             </div>
