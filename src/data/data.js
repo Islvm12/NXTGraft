@@ -37,24 +37,24 @@ export const dataDict = {
 
 // --- Images for the Auto-scrolling Galleries ---
 export const highlightImages = [
-  "/src/assets/Highlights/1.png",
-  "/src/assets/Highlights/2.png",
-  "/src/assets/Highlights/3.png",
-  "/src/assets/Highlights/4.png",
-  "/src/assets/Highlights/5.png",
-  "/src/assets/Highlights/6.png",
+  "./assets/Highlights/1.png",
+  "./assets/Highlights/2.png",
+  "./assets/Highlights/3.png",
+  "./assets/Highlights/4.png",
+  "./assets/Highlights/5.png",
+  "./assets/Highlights/6.png",
 ];
 
 export const highlightImages0 = [
-  "/src/assets/Highlights/01.png",
-  "/src/assets/Highlights/02.png",
-  "/src/assets/Highlights/03.png",
-  "/src/assets/Highlights/04.png",
-  "/src/assets/Highlights/05.png",
-  "/src/assets/Highlights/06.png",
-  "/src/assets/Highlights/07.png",
-  "/src/assets/Highlights/08.png",
-  "/src/assets/Highlights/09.png",
+  "./assets/Highlights/01.png",
+  "./assets/Highlights/02.png",
+  "./assets/Highlights/03.png",
+  "./assets/Highlights/04.png",
+  "./assets/Highlights/05.png",
+  "./assets/Highlights/06.png",
+  "./assets/Highlights/07.png",
+  "./assets/Highlights/08.png",
+  "./assets/Highlights/09.png",
 ];
 
 // --- Mentors for Special Thanks Section ---
@@ -79,35 +79,35 @@ export const teamCategories = [
         id: 1,
         linkedIn:
           "https://www.linkedin.com/in/omer-saed-777102407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Omar Saeed.png",
+        image: "./assets/Team members/Omar Saeed.png",
         name: "Omar Saeed",
       },
       {
         id: 2,
         linkedIn:
           "https://www.linkedin.com/in/mustafa-kamel-9766a43a1?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Mustafa.png",
+        image: "./assets/Team members/Mustafa.png",
         name: "Mustafa Kamel",
       },
       {
         id: 7,
         linkedIn:
           "https://www.linkedin.com/in/sohila-nassar-35911a407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Suhaila.png",
+        image: "./assets/Team members/Suhaila.png",
         name: "Suhaila Sameer",
       },
       {
         id: 8,
         linkedIn:
           "https://www.linkedin.com/in/aya-hagag-b6356a407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Aya Yasser.png",
+        image: "./assets/Team members/Aya Yasser.png",
         name: "Aya Yasser",
       },
       {
         id: 9,
         linkedIn:
           "https://www.linkedin.com/in/ahmed-gomaa-altanikhy-b15032407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Ahmed Gomaa.png",
+        image: "./assets/Team members/Ahmed Gomaa.png",
         name: "Ahmed Gomaa",
       },
     ],
@@ -119,7 +119,7 @@ export const teamCategories = [
       {
         id: 3,
         linkedIn: "#",
-        image: "/src/assets/Team members/M.Alaa.png",
+        image: "./assets/Team members/M.Alaa.png",
         name: "Mohamed Alaa",
         role: "Pneumatics Lead",
       },
@@ -127,35 +127,35 @@ export const teamCategories = [
         id: 4,
         linkedIn:
           "https://www.linkedin.com/in/ammar-eid-ba9118407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Ammar.png",
+        image: "./assets/Team members/Ammar.png",
         name: "Ammar Eid",
       },
       {
         id: 10,
         linkedIn:
           "https://www.linkedin.com/in/basmala-ahmed-581035407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Basmala.png",
+        image: "./assets/Team members/Basmala.png",
         name: "Basmala Ahmed",
       },
       {
         id: 11,
         linkedIn:
           "https://www.linkedin.com/in/shahd-ali-4a0376282?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Shahd.png",
+        image: "./assets/Team members/Shahd.png",
         name: "Shahd Ali",
       },
       {
         id: 12,
         linkedIn:
           "https://www.linkedin.com/in/hassan-elbadawy-1386563b3?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/H.Badawy.png",
+        image: "./assets/Team members/H.Badawy.png",
         name: "Hassan Albadawy",
       },
       {
         id: 13,
         linkedIn:
           "https://www.linkedin.com/in/mohamed-esam-a0a83630a?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/M.essam.png",
+        image: "./assets/Team members/M.essam.png",
         name: "Mohamed Essam",
       },
     ],
@@ -168,33 +168,33 @@ export const teamCategories = [
         id: 5,
         linkedIn:
           "https://www.linkedin.com/in/eslam-khalifa-126098407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Eslam.png",
+        image: "./assets/Team members/Eslam.png",
         name: "Eslam Khalifa",
       },
       {
         id: 6,
         linkedIn:
           "https://www.linkedin.com/in/shahy-ahmdeen-9b50a4407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Shahy.png",
+        image: "./assets/Team members/Shahy.png",
         name: "Shahinda Hamed",
       },
       {
         id: 13,
         linkedIn:
           "https://www.linkedin.com/in/shahy-ahmdeen-9b50a4407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-        image: "/src/assets/Team members/Ali.png",
+        image: "./assets/Team members/Ali.png",
         name: "Ali Abdelhamid",
       },
       {
         id: 14,
         linkedIn: "#",
-        image: "/src/assets/Team members/M.gamal.png",
+        image: "./assets/Team members/M.gamal.png",
         name: "Mohamed Gamal",
       },
       {
         id: 15,
         linkedIn: "#",
-        image: "/src/assets/Team members/A.Abdelkarim.png",
+        image: "./assets/Team members/A.Abdelkarim.png",
         name: "Ahmed Abdelkarim",
       },
     ],
