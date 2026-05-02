@@ -162,7 +162,7 @@ export default function App() {
           {/* Background Image (Agricultural Setting) */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/src/assets/Hero-BG.jpg"
+              src="./assets/Hero-BG.jpg"
               className="w-full h-full object-cover"
               alt="Green Grass Field Under Cloudy Sky"
               fetchpriority="high"
@@ -213,8 +213,8 @@ export default function App() {
                     muted
                     loop
                     autoPlay
-                    src={"/src/assets/Highlights/Highlights.mp4"}
-                    poster="/src/assets/Highlights/Highlights TN.png"
+                    src={"./assets/Highlights/Highlights.mp4"}
+                    poster="./assets/Highlights/Highlights TN.png"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
                 )}
@@ -239,18 +239,18 @@ export default function App() {
                 {[
                   {
                     title: "Design",
-                    vid: "/src/assets/Highlights/Design.mp4",
-                    poster: "/src/assets/Highlights/Design TN.png",
+                    vid: "./assets/Highlights/Design.mp4",
+                    poster: "./assets/Highlights/Design TN.png",
                   },
                   {
                     title: "Development",
-                    vid: "/src/assets/Highlights/Sys Dev1.mp4",
-                    poster: "/src/assets/Highlights/Sys Dev1 TN.png",
+                    vid: "./assets/Highlights/Sys Dev1.mp4",
+                    poster: "./assets/Highlights/Sys Dev1 TN.png",
                   },
                   {
                     title: "Testing",
-                    vid: "/src/assets/Highlights/integration.mp4",
-                    poster: "/src/assets/Highlights/integration TN.png",
+                    vid: "./assets/Highlights/integration.mp4",
+                    poster: "./assets/Highlights/integration TN.png",
                   },
                 ].map((item, i) => (
                   <div
@@ -316,7 +316,7 @@ export default function App() {
               <div className="relative p-2 rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl max-w-5xl w-full overflow-hidden group">
                 <img
                   loading="lazy"
-                  src="image_fea916.jpg"
+                  src="./assets/image_fea916.jpg"
                   alt="Full Robot Architecture"
                   className="w-full h-[350px] md:h-[550px] object-cover rounded-3xl border border-slate-800/80 transition-transform duration-700 group-hover:scale-[1.01]"
                   onError={(e) => {
@@ -341,7 +341,7 @@ export default function App() {
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
                     loading="lazy"
-                    src="/src/assets/Design.jpg"
+                    src="./assets/Design.jpg"
                     alt="Mechanical Design"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                   />
@@ -376,7 +376,7 @@ export default function App() {
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
                     loading="lazy"
-                    src="/src/assets/Elec Sys.png"
+                    src="./assets/Elec Sys.png"
                     alt="Electrical Systems"
                     className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                   />
@@ -411,7 +411,7 @@ export default function App() {
                 <div className="h-56 overflow-hidden relative border-b border-white/10">
                   <img
                     loading="lazy"
-                    src="/src/assets/Pneu Sys.png"
+                    src="./assets/Pneu Sys.png"
                     alt="Pneumatic Mechanics"
                     className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100"
                   />
@@ -540,7 +540,7 @@ export default function App() {
                   <div className="md:w-2/5 h-fit md:h-auto relative overflow-hidden">
                     <img
                       loading="lazy"
-                      src="/src/assets/Team members/nour.png"
+                      src="./assets/Team members/nour.png"
                       alt="Dr. Nouraldin Sharaby"
                       className="w-full h-auto sm:h-full sm:w-auto opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
