@@ -37,24 +37,24 @@ export const dataDict = {
 
 // --- Images for the Auto-scrolling Galleries ---
 export const highlightImages = [
-  "./assets/Highlights/1.png",
-  "./assets/Highlights/2.png",
-  "./assets/Highlights/3.png",
-  "./assets/Highlights/4.png",
-  "./assets/Highlights/5.png",
-  "./assets/Highlights/6.png",
+  "./assets/Highlights/1.webp",
+  "./assets/Highlights/2.webp",
+  "./assets/Highlights/3.webp",
+  "./assets/Highlights/4.webp",
+  "./assets/Highlights/5.webp",
+  "./assets/Highlights/6.webp",
 ];
 
 export const highlightImages0 = [
-  "./assets/Highlights/01.png",
-  "./assets/Highlights/02.png",
-  "./assets/Highlights/03.png",
-  "./assets/Highlights/04.png",
-  "./assets/Highlights/05.png",
-  "./assets/Highlights/06.png",
-  "./assets/Highlights/07.png",
-  "./assets/Highlights/08.png",
-  "./assets/Highlights/09.png",
+  "./assets/Highlights/01.webp",
+  "./assets/Highlights/02.webp",
+  "./assets/Highlights/03.webp",
+  "./assets/Highlights/04.webp",
+  "./assets/Highlights/05.webp",
+  "./assets/Highlights/06.webp",
+  "./assets/Highlights/07.webp",
+  "./assets/Highlights/08.webp",
+  "./assets/Highlights/09.webp",
 ];
 
 // --- Mentors for Special Thanks Section ---
