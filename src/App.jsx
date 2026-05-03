@@ -214,7 +214,7 @@ export default function App() {
                     loop
                     autoPlay
                     src={"./assets/Highlights/Highlights.mp4"}
-                    poster="./assets/Highlights/Highlights TN.png"
+                    poster="./assets/Highlights/Highlights TN.webp"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
                 )}
@@ -240,17 +240,17 @@ export default function App() {
                   {
                     title: "Design",
                     vid: "./assets/Highlights/Design.mp4",
-                    poster: "./assets/Highlights/Design TN.png",
+                    poster: "./assets/Highlights/Design TN.webp",
                   },
                   {
                     title: "Development",
                     vid: "./assets/Highlights/Sys Dev1.mp4",
-                    poster: "./assets/Highlights/Sys Dev1 TN.png",
+                    poster: "./assets/Highlights/Sys Dev1 TN.webp",
                   },
                   {
                     title: "Testing",
                     vid: "./assets/Highlights/integration.mp4",
-                    poster: "./assets/Highlights/integration TN.png",
+                    poster: "./assets/Highlights/integration TN.webp",
                   },
                 ].map((item, i) => (
                   <div
