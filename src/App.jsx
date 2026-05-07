@@ -20,6 +20,23 @@ import {
 // ============================================================================
 export default function App() {
   const [introStep, setIntroStep] = useState(0);
+  const [currentArchSlide, setCurrentArchSlide] = useState(0);
+
+  // The images for the new automated architecture slider
+  const archSlides = [
+    "./assets/RTop.webp",
+    "./assets/RSide.webp",
+    "./assets/RFront.webp",
+  ];
+
+  // --- EFFECT: ARCHITECTURE IMAGE SLIDER TIMER ---
+  useEffect(() => {
+    const sliderTimer = setInterval(() => {
+      setCurrentArchSlide((prevSlide) => (prevSlide + 1) % archSlides.length);
+    }, 3500);
+
+    return () => clearInterval(sliderTimer);
+  }, [archSlides.length]);
 
   // --- EFFECT: INTRO SEQUENCE ---
   useEffect(() => {
@@ -213,7 +230,7 @@ export default function App() {
                     muted
                     loop
                     autoPlay
-                    src={"./assets/Highlights/Highlights.mp4"}
+                    src={"./assets/Highlights/integration.mp4"}
                     poster="./assets/Highlights/Highlights TN.webp"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
@@ -310,24 +327,47 @@ export default function App() {
               className="w-full flex justify-center mb-20 md:mb-32 reveal-on-scroll relative z-10"
               style={{ transitionDelay: "0.1s" }}
             >
-              {/* Glowing backdrop for the main image */}
+              {/* Glowing backdrop for the main image slider */}
               <div className="absolute inset-0 bg-sky-400/20 rounded-3xl blur-[100px] max-w-5xl mx-auto"></div>
 
-              <div className="relative p-2 rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl max-w-5xl w-full overflow-hidden group">
-                <img
-                  // loading="lazy"
-                  src="./assets/image_fea916.jpg"
-                  alt="Full Robot Architecture"
-                  className="w-full h-[350px] md:h-[550px] object-cover rounded-3xl border border-slate-800/80 transition-transform duration-700 group-hover:scale-[1.01]"
-                  onError={(e) => {
-                    e.target.src =
-                      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80";
-                  }}
-                />
+              <div className="relative p-2 rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-sm shadow-2xl max-w-5xl w-full group">
+                {/* 1. NEW VIEWPORT WRAPPER (This stays still and hides the overflow) */}
+                <div className="w-full h-[350px] md:h-[550px] overflow-hidden rounded-3xl border border-slate-800/80 relative">
+                  {/* 2. THE MOVING TRACK (Removed overflow-hidden from here) */}
+                  <div
+                    className="flex w-full h-full transition-transform duration-1000 ease-in-out"
+                    style={{
+                      transform: `translateX(-${currentArchSlide * 100}%)`,
+                    }}
+                  >
+                    {archSlides.map((slide, index) => (
+                      <img
+                        key={index}
+                        src={slide}
+                        alt={`Architecture View ${index + 1}`}
+                        className="w-full h-full object-cover flex-shrink-0 transition-transform duration-700 group-hover:scale-[1.01]"
+                        onError={(e) => {
+                          e.target.src =
+                            "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80";
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Slider Indicator Dots (Adjusted bottom padding slightly) */}
+                <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+                  {archSlides.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`h-2 rounded-full transition-all duration-500 ${currentArchSlide === index ? "bg-sky-400 w-6" : "bg-white/40 w-2"}`}
+                    />
+                  ))}
+                </div>
 
                 {/* Decorative corner accents */}
-                <div className="absolute top-6 left-6 w-8 h-8 border-t-2 border-l-2 border-sky-400/50 rounded-tl-lg"></div>
-                <div className="absolute bottom-6 right-6 w-8 h-8 border-b-2 border-r-2 border-sky-400/50 rounded-br-lg"></div>
+                <div className="absolute top-6 left-6 w-8 h-8 border-t-2 border-l-2 border-sky-400/50 rounded-tl-lg pointer-events-none"></div>
+                <div className="absolute bottom-6 right-6 w-8 h-8 border-b-2 border-r-2 border-sky-400/50 rounded-br-lg pointer-events-none"></div>
               </div>
             </div>
 
@@ -542,7 +582,7 @@ export default function App() {
                     <img
                       // loading="lazy"
                       src="./assets/Team members/nour.png"
-                      alt="Dr. Nouraldin Sharaby"
+                      alt="Dr. Noureldin Sharaby"
                       className="w-full h-auto sm:h-full sm:w-auto opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
                   </div>
@@ -552,14 +592,18 @@ export default function App() {
                       Academic Supervisor
                     </h3>
                     <h2 className="text-3xl md:text-4xl font-black text-white mb-6 font-outfit">
-                      Dr. Nouraldin Sharaby
+                      Dr. Noureldin Sharaby
                     </h2>
                     <p className="text-slate-400 text-lg leading-relaxed font-inter">
                       We extend our deepest gratitude for his invaluable
                       guidance, continuous support, and profound academic
                       insights throughout every phase of the NxtGraft project.
                     </p>
-                    <a href="https://www.linkedin.com/in/noureldin-sharaby-ph-d-48b26b175?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+                    <a
+                      href="https://www.linkedin.com/in/noureldin-sharaby-ph-d-48b26b175?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LinkedinLogoIcon className="mt-4 text-[#0076b6] w-8 h-8" />
                     </a>
                   </div>
@@ -634,6 +678,8 @@ export default function App() {
                                   {/* Clickable Icon */}
                                   <a
                                     href={member.linkedIn || "#"}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className={`w-8 h-8 rounded-full border border-white/20 hover:bg-[#0076b6] hover:border-transparent flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-x-4 group-hover:translate-x-0`}
                                   >
                                     <LinkedinLogoIcon className="w-4 h-4 text-white" />
@@ -756,6 +802,8 @@ export default function App() {
                         <li key={`link-${member.id}`}>
                           <a
                             href={member.linkedIn}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="group flex items-center gap-3 hover:text-white transition-colors"
                           >
                             <div className="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-[#0076b6] transition-colors">

@@ -94,7 +94,7 @@ export const teamCategories = [
         linkedIn:
           "https://www.linkedin.com/in/sohila-nassar-35911a407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "./assets/Team members/Suhaila.png",
-        name: "Suhaila Sameer",
+        name: "Sohila Samir",
       },
       {
         id: 8,
@@ -176,7 +176,7 @@ export const teamCategories = [
         linkedIn:
           "https://www.linkedin.com/in/shahy-ahmdeen-9b50a4407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "./assets/Team members/Shahy.png",
-        name: "Shahinda Hamed",
+        name: "Shahenda Hamid",
       },
       {
         id: 13,
@@ -187,7 +187,8 @@ export const teamCategories = [
       },
       {
         id: 14,
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/mohamed-gamal-6ab135408?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
         image: "./assets/Team members/M.gamal.png",
         name: "Mohamed Gamal",
       },
