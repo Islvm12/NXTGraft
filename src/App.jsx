@@ -231,7 +231,7 @@ export default function App() {
                     loop
                     autoPlay
                     src={"./assets/Highlights/integration.mp4"}
-                    poster="./assets/Highlights/Highlights TN.webp"
+                    poster="./assets/Highlights/integration TN.webp"
                     className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   />
                 )}
