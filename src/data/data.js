@@ -118,7 +118,7 @@ export const teamCategories = [
     members: [
       {
         id: 3,
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/mohamed-el-okya",
         image: "./assets/Team members/M.Alaa.png",
         name: "Mohamed Alaa",
         role: "Pneumatics Lead",
