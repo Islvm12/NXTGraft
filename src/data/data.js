@@ -194,7 +194,7 @@ export const teamCategories = [
       },
       {
         id: 15,
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/ahmed-m-abdelkarim-🚜🧑‍🌾-909589407?utm_source=share_via&utm_content=profile&utm_medium=member_android",
         image: "./assets/Team members/A.Abdelkarim.png",
         name: "Ahmed Abdelkarim",
       },
